@@ -1,5 +1,9 @@
 // Import the data to customize and insert them into page
 const fetchData = () => {
+
+  const music = document.getElementById("background-music");
+  music.play(); // Start playing the music
+  
   fetch("customize.json")
     .then(data => data.json())
     .then(data => {
